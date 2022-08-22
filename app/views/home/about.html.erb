@@ -1,0 +1,133 @@
+<div class="total">
+    <%= image_tag("logo.png",alt: "logo" ,class: "logo-img" , id:"logo-img-3") %>
+        <div class="drop_down">
+            <ul>
+                <ul>
+        <li><a href="index">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li>
+            <a href="#">Categories ▾</a>
+            <ul class="dropdown">
+               <li><a href="/pg">Pg</a></li>
+                <li><a href="/hostel">Hostels</a></li>
+                <li><a href="/house">House</a></li>
+                <li><a href="/apartments">Apartments</a></li>
+            </ul>
+        </li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+            <%if session[:user_id] !=nil%>
+                    <li class="user_pers">
+                        <i class="fa-solid fa-user logout"></i>
+                        <% logged_user=User.find(session[:user_id]) %>
+                            <%= logged_user["fname"]%>
+                                <ul class="dropdown_logout">
+                                    <li><a href="/logout">Logout</a></li>
+                                    <li><a href="/shortlist">My Shortlist</a></li>
+                                </ul>
+                    </li>
+                    <%else%>
+                        <a href="/login"><button class="login_btn">Login</button></a>
+                        <a href="/signup"><button class="signup_btn">Create Account</button></a>
+                        <%end%>
+
+        </div>
+</div>
+    <%# <div class="search">
+            <form action="#">
+                <input type="text" class="search"
+                    placeholder="Search Pg's"
+                    name="search">
+                    <%= image_tag("search_icon.png",alt: "logo",class: "search-img", id:"logo-img-3") %>
+            </form> 
+        </div> 
+        <%= image_tag("happy home about.png",alt: "logo",class: "abt_1", id:"logo-img-3") %>
+        <div class="abt_cont">
+        <h1>About us</h1>
+        <p>
+        We work with the best PG,House and Apartments accomodetions in chennai.We ensure that we provide <br>
+        the best facilities to our customers.We connect our owners to the seekers and we ensure that you<br>
+        are perfect fit for each other.If you are looking for a comfortable and affordable accomodation in<br>
+        chennai,you are at the right place!!!.... Just enter the details of what you are looking for your<br>
+        accomodation and find all the possibilities of living in chennai.You can keep your worries away now!!!!<br>
+         We also take care of your pricing queries......Find the most perfect,cozy place at a price you can easily manage with.
+        </p>
+        </div>
+        <div class="loginPopup">
+        <div class="formPopup" id="popupForm">
+            <form action="session/create" method="post" class="formContainer">
+                <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+                <button class="close_btn" onclick="closeForm()"><i class="fa-solid fa-xmark close"></i></button>
+                <h2>Please Log in</h2>
+                <label for="email">
+                    <strong>Name</strong>
+                </label>
+                <input type="text" id="email" placeholder="Your Name" name="user[name]" required>
+                <label for="psw">
+                    <strong>Email</strong>
+                </label>
+                <input type="text" id="psw" placeholder="Your Email" name="user[email]" required>
+                <button type="submit" class="btn">Log in</button>
+                <% if flash[:error]%>
+                    <p class="text-danger">
+                        <%= flash[:error] %>
+                    </p>
+                    <% end %>
+                        <p class="act_btn">If don't have account &nbsp; <a class="act_link" onclick="opensignform()">
+                                <button type="button">Click
+                                    here</button></a></p>
+        </div>
+    </div>
+
+
+    </form>
+    <div class="signupPopup">
+        <div class="formPopup" id="signupform">
+            <form action="users/create" method="post" class="formContainer">
+                <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+                <button class="close_btn" onclick="closesignform()"><i class="fa-solid fa-xmark close"></i></button>
+                <label for="email">
+                    <strong>F_Name</strong>
+                </label>
+                <input type="text" id="email" placeholder="Your First_Name" name="users[fname]" required>
+                <label for="email">
+                    <strong>S_Name</strong>
+                </label>
+                <input type="text" id="email" placeholder="Your Second_Name" name="users[sname]" required>
+                <label for="psw">
+                    <strong>Email</strong>
+                </label>
+                <input type="text" id="psw" placeholder="Your Email" name="users[email]" required>
+                <label for="ph_number">
+                    <strong>Ph_number</strong>
+                </label>
+                <input type="tel" id="ph_number" placeholder="Ph_number" name="users[pnumber]" required>
+                <button type="submit" class="btn">Register</button>
+                <% if flash[:error]%>
+                    <p class="text-danger">
+                        <%= flash[:error] %>
+                    </p>
+                    <% end %>
+                        <p class="act_btn">If don't have account &nbsp; <a class="act_link" onclick="openform()">
+                                <button type="button">Click
+                                    here</button></a></p>
+        </div>
+    </div>
+    </form>
+
+
+    <script>
+        function openForm() {
+            document.getElementById("popupForm").style.display = "block";
+        }
+        function closeForm() {
+            document.getElementById("popupForm").style.display = "none";
+        }
+        function opensignform() {
+            document.getElementById("signupform").style.display = "block";
+            document.getElementById("popupForm").style.display = "none";
+        }
+        function closesignform() {
+            document.getElementById("signupform").style.display = "none";
+        }
+    </script>

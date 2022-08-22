@@ -1,0 +1,52 @@
+<div class="total">
+    <%= image_tag("logo.png",alt: "logo" ,class: "logo-img" , id:"logo-img-3") %>
+        <div class="drop_down">
+            <ul>
+                <ul>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li>
+                        <a href="#">Categories ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="/pg">Pg</a></li>
+                            <li><a href="/hostel">Hostels</a></li>
+                            <li><a href="/house">House</a></li>
+                            <li><a href="/apartments">Apartments</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+                <%if session[:user_id] !=nil%>
+                    <li class="user_pers">
+                        <i class="fa-solid fa-user logout"></i>
+                        <% logged_user=User.find(session[:user_id]) %>
+                            <%= logged_user["fname"]%>
+                                <ul class="dropdown_logout">
+                                    <li><a href="/logout">Logout</a></li>
+                                    <li><a href="/shortlist">My Shortlist</a></li>
+                                </ul>
+                    </li>
+                    <%else%>
+                        <a href="/login"><button class="login_btn">Login</button></a>
+                        <a href="/signup"><button class="signup_btn">Create Account</button></a>
+                        <%end%>
+
+
+        </div>
+</div>
+<p class="sign_heading">Welcome Back</p>
+<%= image_tag("Group 7 (1).png",alt: "sign_up" ,class: "signup_image" , id:"signup_image") %>
+<div class="log_box">
+    <form action="session/create" method="post">
+        <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+        <input type="email" placeholder="Email" name="user[email]" id="sign_inp11" required>
+        <input type="password" placeholder="password" name="user[password]" id="sign_inp12" required>
+        <button type="submit" class="f_sub2">Submit</button>
+        <%# <p>If you are admin Click to<a href="/admin">login</a><p> %>
+        <% if flash[:error]%>
+            <p class="text-danger">
+                <%= flash[:error] %>
+            </p>
+            <% end %>
+    </form>
+</div>

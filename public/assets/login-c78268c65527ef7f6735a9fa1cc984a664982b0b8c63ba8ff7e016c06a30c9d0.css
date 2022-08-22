@@ -1,0 +1,137 @@
+/* line 1, app/assets/stylesheets/login.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 5, app/assets/stylesheets/login.scss */
+.openButton {
+  border: none;
+  border-radius: 5px;
+  background-color: #1c87c9;
+  color: white;
+  padding: 14px 20px;
+  cursor: pointer;
+  position: fixed;
+}
+
+/* line 15, app/assets/stylesheets/login.scss */
+.loginPopup {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 21, app/assets/stylesheets/login.scss */
+.formPopup {
+  display: none;
+  position: fixed;
+  left: 45%;
+  top: 5%;
+  transform: translate(-50%, 5%);
+  border: none;
+  z-index: 9;
+  margin-left: 40%;
+  width: 25%;
+}
+
+/* line 33, app/assets/stylesheets/login.scss */
+.formPopup h2 {
+  font-size: 26px;
+  color: black;
+}
+
+/* line 38, app/assets/stylesheets/login.scss */
+strong {
+  color: black;
+}
+
+/* line 42, app/assets/stylesheets/login.scss */
+.close_btn {
+  width: 16%;
+  height: 4%;
+  margin-left: 89%;
+  background-color: grey;
+  border: none;
+}
+
+/* line 50, app/assets/stylesheets/login.scss */
+.act_btn {
+  color: black;
+}
+
+/* line 54, app/assets/stylesheets/login.scss */
+.act_link {
+  color: #1c87c9;
+}
+
+/* line 58, app/assets/stylesheets/login.scss */
+.act_link button {
+  border: none;
+  background-color: #acb8c4;
+  border-radius: 10px;
+}
+
+/* line 64, app/assets/stylesheets/login.scss */
+.close {
+  font-size: 30px;
+  color: red;
+}
+
+/* line 69, app/assets/stylesheets/login.scss */
+.close:hover {
+  color: white;
+}
+
+/* line 73, app/assets/stylesheets/login.scss */
+.formContainer {
+  max-width: 500px;
+  padding: 20px;
+  background: rgba(150, 255, 161, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
+  border: 1px solid #96ffa1;
+}
+
+/* line 84, app/assets/stylesheets/login.scss */
+.formContainer input[type=text],
+.formContainer input[type=password],
+.formContainer input[type=tel] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #eee;
+}
+
+/* line 94, app/assets/stylesheets/login.scss */
+.formContainer input[type=text]:focus,
+.formContainer input[type=password]:focus,
+.formContainer input[type=tel]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* line 101, app/assets/stylesheets/login.scss */
+.formContainer .btn {
+  padding: 12px 20px;
+  border: none;
+  background-color: #8ebf42;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+/* line 112, app/assets/stylesheets/login.scss */
+.formContainer .cancel {
+  background-color: #cc0000;
+}
+
+/* line 116, app/assets/stylesheets/login.scss */
+.formContainer .btn:hover,
+.openButton:hover {
+  opacity: 1;
+}

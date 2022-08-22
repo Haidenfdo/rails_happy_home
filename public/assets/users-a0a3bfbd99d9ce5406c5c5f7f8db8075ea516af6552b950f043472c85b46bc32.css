@@ -1,0 +1,631 @@
+/* line 1, app/assets/stylesheets/users.scss */
+.nav_menu {
+  margin-left: 35%;
+}
+
+/* line 5, app/assets/stylesheets/users.scss */
+.login_btn {
+  border: none;
+  border-radius: 10px;
+  background-color: #86DB99;
+  margin-left: 56%;
+  height: 40px;
+  position: absolute;
+  margin-top: -2%;
+}
+
+/* line 15, app/assets/stylesheets/users.scss */
+.signup_btn {
+  border: none;
+  border-radius: 10px;
+  background-color: #86DB99;
+  height: 40px;
+  position: absolute;
+  margin-left: 62%;
+  margin-top: -2%;
+}
+
+/* line 25, app/assets/stylesheets/users.scss */
+.cont {
+  color: #86DB99;
+}
+
+/* line 29, app/assets/stylesheets/users.scss */
+.total {
+  background-color: #f1f9f0;
+  height: 10vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* line 38, app/assets/stylesheets/users.scss */
+.logo-img {
+  width: 20%;
+  position: absolute;
+}
+
+/* line 43, app/assets/stylesheets/users.scss */
+ul {
+  padding: 0;
+  list-style: none;
+  margin-left: 25%;
+  padding-top: 1%;
+}
+
+/* line 50, app/assets/stylesheets/users.scss */
+ul li {
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  text-align: left;
+}
+
+/* line 57, app/assets/stylesheets/users.scss */
+ul li a {
+  display: block;
+  padding: 8px 25px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 64, app/assets/stylesheets/users.scss */
+ul li a:hover {
+  color: #86DB99;
+}
+
+/* line 68, app/assets/stylesheets/users.scss */
+ul li ul.dropdown {
+  min-width: 100%;
+  /* Set width of the dropdown */
+  background: #f2f2f2;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+
+/* line 78, app/assets/stylesheets/users.scss */
+ul li:hover ul.dropdown {
+  display: block;
+  /* Display the dropdown */
+}
+
+/* line 83, app/assets/stylesheets/users.scss */
+ul li ul.dropdown li {
+  display: block;
+}
+
+/* line 87, app/assets/stylesheets/users.scss */
+.main_center {
+  background-color: #ebf5ed;
+  width: 72%;
+  height: auto;
+  margin-left: 28%;
+  color: #333;
+  display: block;
+}
+
+/* line 96, app/assets/stylesheets/users.scss */
+.main_center h5 {
+  margin-left: 30%;
+}
+
+/* line 100, app/assets/stylesheets/users.scss */
+.rent_class {
+  margin-left: -16%;
+}
+
+/* line 104, app/assets/stylesheets/users.scss */
+.share_pg {
+  margin-left: 24%;
+}
+
+/* line 108, app/assets/stylesheets/users.scss */
+.deposit_pg {
+  margin-left: 24%;
+}
+
+/* line 112, app/assets/stylesheets/users.scss */
+.pg_photos {
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+}
+
+/* line 118, app/assets/stylesheets/users.scss */
+.pg_photos img {
+  width: 100%;
+}
+
+/* line 122, app/assets/stylesheets/users.scss */
+a:link {
+  text-decoration: none;
+}
+
+/* line 126, app/assets/stylesheets/users.scss */
+#filter {
+  width: 20px;
+  height: 20px;
+  margin-top: 5%;
+  margin-left: 3%;
+}
+
+/* line 133, app/assets/stylesheets/users.scss */
+#filtering {
+  width: 20px;
+  height: 20px;
+  margin-top: 5%;
+  margin-left: 3%;
+}
+
+/* line 140, app/assets/stylesheets/users.scss */
+.gender {
+  width: 20px;
+  height: 20px;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+/* line 147, app/assets/stylesheets/users.scss */
+.pref_prof {
+  font-weight: 900;
+  margin-top: 10%;
+  margin-left: 3%;
+}
+
+/* line 153, app/assets/stylesheets/users.scss */
+#att_bath {
+  width: 20px;
+  height: 20px;
+  margin-top: 15%;
+  margin-left: 3%;
+}
+
+/* line 160, app/assets/stylesheets/users.scss */
+.side_cont {
+  width: 28%;
+  height: 92vh;
+  position: absolute;
+  margin-top: 4%;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+}
+
+/* line 170, app/assets/stylesheets/users.scss */
+input[list=location] {
+  margin-left: -42%;
+  height: 40px;
+  width: 52%;
+  border-radius: 18px;
+}
+
+/* line 177, app/assets/stylesheets/users.scss */
+#search_form {
+  position: absolute;
+  margin-left: -10%;
+}
+
+/* line 182, app/assets/stylesheets/users.scss */
+#search_btn {
+  visibility: hidden;
+}
+
+/* line 186, app/assets/stylesheets/users.scss */
+.search {
+  position: absolute;
+  margin-left: -7%;
+  font-size: 26px;
+  margin-top: 1%;
+}
+
+/* line 193, app/assets/stylesheets/users.scss */
+.user_lg {
+  position: absolute;
+  margin-left: 30%;
+  margin-top: -16.5%;
+  color: black;
+}
+
+/* line 200, app/assets/stylesheets/users.scss */
+.cal_day {
+  color: black;
+  margin-left: 30%;
+  margin-top: -19.5%;
+  position: absolute;
+}
+
+/* line 207, app/assets/stylesheets/users.scss */
+.foods {
+  position: absolute;
+  color: black;
+  margin-left: 30%;
+  margin-top: -15.5%;
+}
+
+/* line 215, app/assets/stylesheets/users.scss */
+.time {
+  position: absolute;
+  margin-left: 30%;
+  margin-top: -12%;
+  color: black;
+}
+
+/* line 222, app/assets/stylesheets/users.scss */
+.own_det {
+  border: none;
+  background-color: #6AE4DD;
+  height: 50px;
+  width: 16%;
+  position: absolute;
+  margin-left: 57%;
+  margin-top: -9%;
+}
+
+/* line 232, app/assets/stylesheets/users.scss */
+.own_det:hover {
+  background-color: #a9f9f5;
+}
+
+/* line 236, app/assets/stylesheets/users.scss */
+.hrt_btn {
+  height: 50px;
+  width: 3%;
+  position: absolute;
+  margin-left: 80%;
+  margin-top: -9%;
+  visibility: visible;
+}
+
+/* line 245, app/assets/stylesheets/users.scss */
+.hrt_btn:hover {
+  background-color: red;
+}
+
+/* line 249, app/assets/stylesheets/users.scss */
+.heart {
+  font-size: 30px;
+}
+
+/* line 253, app/assets/stylesheets/users.scss */
+.details {
+  width: 100%;
+  border: 1px ridge #dfdddd;
+}
+
+/* line 258, app/assets/stylesheets/users.scss */
+.home {
+  font-size: 40px;
+  padding-top: 1.5%;
+  padding-left: 3%;
+}
+
+/* line 264, app/assets/stylesheets/users.scss */
+.vl {
+  border-left: 1px ridge #dfdddd;
+  height: 100px;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: -3.9%;
+}
+
+/* line 272, app/assets/stylesheets/users.scss */
+#address1 {
+  position: absolute;
+  margin-top: -3.4%;
+  margin-left: 14%;
+  font-weight: bold;
+  color: #4f4e4e;
+}
+
+/* line 280, app/assets/stylesheets/users.scss */
+#address2 {
+  position: absolute;
+  margin-top: -1%;
+  margin-left: 14%;
+  color: #a4a2a2;
+}
+
+/* line 287, app/assets/stylesheets/users.scss */
+.vl1 {
+  border-left: 1px ridge #dfdddd;
+  height: 100px;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: -3.9%;
+}
+
+/* line 295, app/assets/stylesheets/users.scss */
+.rup_sign {
+  position: absolute;
+  margin-top: -2.8%;
+  margin-left: 53%;
+}
+
+/* line 301, app/assets/stylesheets/users.scss */
+#rent {
+  position: absolute;
+  margin-left: 53%;
+  margin-top: -2.4%;
+  color: #a4a2a2;
+}
+
+/* line 308, app/assets/stylesheets/users.scss */
+.vl2 {
+  border-left: 1px ridge #dfdddd;
+  height: 100px;
+  position: absolute;
+  margin-left: 62%;
+  margin-top: -5.4%;
+}
+
+/* line 316, app/assets/stylesheets/users.scss */
+.own_det1 {
+  position: absolute;
+  margin-left: 64%;
+  margin-top: -4%;
+  border: none;
+  background-color: red;
+  height: 50px;
+  width: 12%;
+}
+
+/* line 326, app/assets/stylesheets/users.scss */
+.own_det1:hover {
+  background-color: #a9f9f5;
+}
+
+/* line 330, app/assets/stylesheets/users.scss */
+.vl3 {
+  border-left: 1px ridge #dfdddd;
+  height: 100px;
+  position: absolute;
+  margin-left: 78%;
+  margin-top: -5.4%;
+}
+
+/* line 338, app/assets/stylesheets/users.scss */
+.hrt_btn1 {
+  height: 50px;
+  width: 3%;
+  position: absolute;
+  margin-left: 84%;
+  margin-top: -4%;
+}
+
+/* line 346, app/assets/stylesheets/users.scss */
+.hrt_btn1:hover {
+  background-color: red;
+}
+
+/* line 350, app/assets/stylesheets/users.scss */
+.addpg1_box {
+  width: 54%;
+  height: 30%;
+  background-color: #86DB99;
+  margin-left: 24%;
+  margin-top: 3%;
+  box-shadow: 1px 3px 6px 10px rgba(1, 1, 1, 0.1);
+  border-radius: 24px;
+}
+
+/* line 360, app/assets/stylesheets/users.scss */
+.pg_photo {
+  width: 66%;
+  height: 48vh;
+}
+
+/* line 365, app/assets/stylesheets/users.scss */
+.meals {
+  font-size: 20px;
+  margin-left: 70%;
+  position: absolute;
+  margin-top: -22%;
+}
+
+/* line 372, app/assets/stylesheets/users.scss */
+.meals_icon {
+  font-size: 20px;
+}
+
+/* line 376, app/assets/stylesheets/users.scss */
+.timings {
+  font-size: 20px;
+  margin-left: 80%;
+  position: absolute;
+  margin-top: -22%;
+}
+
+/* line 383, app/assets/stylesheets/users.scss */
+.bk {
+  font-size: 20px;
+  margin-left: 70%;
+  position: absolute;
+  margin-top: -16%;
+}
+
+/* line 390, app/assets/stylesheets/users.scss */
+.calendar {
+  font-size: 20px;
+  margin-left: 80%;
+  position: absolute;
+  margin-top: -16%;
+}
+
+/* line 397, app/assets/stylesheets/users.scss */
+.gate_close {
+  font-size: 20px;
+  margin-left: 70%;
+  position: absolute;
+  margin-top: -10%;
+}
+
+/* line 404, app/assets/stylesheets/users.scss */
+.own_det_main {
+  margin-top: 22.2%;
+  position: absolute;
+  width: 20%;
+  height: 6vh;
+  background-color: red;
+  margin-left: 4%;
+}
+
+/* line 413, app/assets/stylesheets/users.scss */
+.message {
+  font-size: 60px;
+  position: absolute;
+  margin-top: 22.2%;
+  margin-left: 28%;
+  color: #acedba;
+  display: inline-block;
+}
+
+/* line 422, app/assets/stylesheets/users.scss */
+.tooltiptext {
+  margin-left: -100%;
+  position: absolute;
+  margin-top: -6%;
+  visibility: hidden;
+}
+
+/* line 429, app/assets/stylesheets/users.scss */
+.maplocation {
+  margin-left: 90%;
+  margin-top: -8%;
+  position: absolute;
+  color: red;
+}
+
+/* line 436, app/assets/stylesheets/users.scss */
+.tooltiptext:hover {
+  visibility: visible;
+}
+
+/* line 441, app/assets/stylesheets/users.scss */
+.sharing_details {
+  font-weight: 900;
+  font-size: x-large;
+  margin-top: 4%;
+  text-decoration: underline red 4px;
+  margin-left: 2%;
+}
+
+/* line 449, app/assets/stylesheets/users.scss */
+.room_amen {
+  color: #4f4e4e;
+  font-size: medium;
+  margin-left: 4%;
+}
+
+/* line 455, app/assets/stylesheets/users.scss */
+.cupboard {
+  background-color: #f2f3f2;
+  width: 6.8%;
+  height: 10vh;
+  margin-left: 5%;
+}
+
+/* line 462, app/assets/stylesheets/users.scss */
+.cupboard_icon {
+  font-size: 50px;
+  margin-left: 34%;
+  margin-top: 10%;
+}
+
+/* line 468, app/assets/stylesheets/users.scss */
+.cupboard p {
+  font-size: medium;
+  color: #4f4e4e;
+  margin-left: 16%;
+}
+
+/* line 474, app/assets/stylesheets/users.scss */
+.bathroom {
+  background-color: #f2f3f2;
+  width: 6.8%;
+  height: 10vh;
+  margin-left: 5%;
+  position: absolute;
+  margin-left: 16%;
+  margin-top: -5.2%;
+}
+
+/* line 484, app/assets/stylesheets/users.scss */
+.bathroom_icon {
+  font-size: 50px;
+  margin-left: 32%;
+  margin-top: 10%;
+}
+
+/* line 490, app/assets/stylesheets/users.scss */
+.bathroom p {
+  font-size: medium;
+  color: #4f4e4e;
+  margin-left: 16%;
+}
+
+/* line 496, app/assets/stylesheets/users.scss */
+.bed {
+  background-color: #f2f3f2;
+  width: 6.8%;
+  height: 10vh;
+  margin-left: 5%;
+  position: absolute;
+  margin-left: 27%;
+  margin-top: -5.2%;
+}
+
+/* line 506, app/assets/stylesheets/users.scss */
+.bed_icon {
+  font-size: 50px;
+  margin-left: 32%;
+  margin-top: 10%;
+}
+
+/* line 512, app/assets/stylesheets/users.scss */
+.bed p {
+  font-size: medium;
+  color: #4f4e4e;
+  margin-left: 16%;
+}
+
+/* line 518, app/assets/stylesheets/users.scss */
+.air_con {
+  background-color: #f2f3f2;
+  width: 6.8%;
+  height: 10vh;
+  margin-left: 5%;
+  position: absolute;
+  margin-left: 38%;
+  margin-top: -5.2%;
+}
+
+/* line 528, app/assets/stylesheets/users.scss */
+.air_icon {
+  font-size: 50px;
+  margin-left: 32%;
+  margin-top: 10%;
+}
+
+/* line 534, app/assets/stylesheets/users.scss */
+.air_con p {
+  font-size: medium;
+  color: #4f4e4e;
+  margin-left: 16%;
+}
+
+/* line 540, app/assets/stylesheets/users.scss */
+.description {
+  color: #4f4e4e;
+  margin-left: 6%;
+  font-family: fantasy;
+}
+
+/* line 546, app/assets/stylesheets/users.scss */
+.pg_end {
+  width: 100%;
+  height: 1vh;
+  background-color: #4f4e4e;
+}

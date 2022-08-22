@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Pg_name: MyString
+  Monthly_rent: 1
+  Room_type: MyString
+  pg_photo: 
+  Deposit: 1
+  Closing_time: 1
+  Food: MyString
+
+two:
+  Pg_name: MyString
+  Monthly_rent: 1
+  Room_type: MyString
+  pg_photo: 
+  Deposit: 1
+  Closing_time: 1
+  Food: MyString

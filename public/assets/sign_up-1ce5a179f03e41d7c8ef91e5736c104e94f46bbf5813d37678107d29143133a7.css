@@ -1,0 +1,189 @@
+/* line 1, app/assets/stylesheets/sign_up.scss */
+.sign_box {
+  width: 40%;
+  height: 30%;
+  background-color: #86DB99;
+  margin-left: 29%;
+  margin-top: 12%;
+  box-shadow: 1px 3px 6px 10px rgba(1, 1, 1, 0.1);
+  border-radius: 24px;
+}
+
+/* line 11, app/assets/stylesheets/sign_up.scss */
+#sign_inp {
+  border-top: black;
+  border-right: black;
+  border-left: black;
+  margin-left: 10%;
+  margin-top: 6%;
+  width: 40%;
+  height: 55px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: aliceblue;
+  padding-left: 3.5%;
+}
+
+/* line 30, app/assets/stylesheets/sign_up.scss */
+#sign_inp1 {
+  border-top: black;
+  border-right: black;
+  border-left: black;
+  margin-left: 24%;
+  margin-top: 6%;
+  width: 50%;
+  height: 55px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: aliceblue;
+  padding-left: 3.5%;
+}
+
+/* line 48, app/assets/stylesheets/sign_up.scss */
+#sign_inp2 {
+  border-top: black;
+  border-right: black;
+  border-left: black;
+  margin-left: 24%;
+  margin-top: 6%;
+  width: 50%;
+  height: 55px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: aliceblue;
+  padding-left: 3.5%;
+}
+
+/* line 67, app/assets/stylesheets/sign_up.scss */
+#sign_input {
+  border-top: black;
+  border-right: black;
+  border-left: black;
+  margin-left: 24%;
+  margin-top: 6%;
+  width: 48%;
+  height: 55px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: aliceblue;
+  padding-left: 3.5%;
+}
+
+/* line 86, app/assets/stylesheets/sign_up.scss */
+#sign_input1 {
+  border-top: black;
+  border-right: black;
+  border-left: black;
+  margin-left: 34%;
+  margin-top: 6%;
+  width: 38%;
+  height: 55px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: aliceblue;
+  padding-left: 3.5%;
+}
+
+/* line 105, app/assets/stylesheets/sign_up.scss */
+#sign_oup {
+  border-top: black;
+  border-right: black;
+  border-left: black;
+  margin-left: 4%;
+  position: absolute;
+  margin-top: 3%;
+  width: 20%;
+  height: 55px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: aliceblue;
+  padding-left: 3.5%;
+}
+
+/* line 125, app/assets/stylesheets/sign_up.scss */
+.f_sub {
+  margin-left: 40%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  border-radius: 1.5vh;
+  height: 48px;
+  width: 16%;
+  background-color: #22b9b1;
+  color: white;
+  font-weight: 900;
+  font-size: larger;
+  border: none;
+}
+
+/* line 139, app/assets/stylesheets/sign_up.scss */
+.add_btn {
+  margin-left: 46%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  border-radius: 1.5vh;
+  height: 48px;
+  width: 16%;
+  background-color: #22b9b1;
+  color: white;
+  font-weight: 900;
+  font-size: larger;
+  border: none;
+}
+
+/* line 153, app/assets/stylesheets/sign_up.scss */
+.add_btn:hover {
+  background-color: #18c6bd;
+}
+
+/* line 157, app/assets/stylesheets/sign_up.scss */
+.f_sub:hover {
+  background-color: #18c6bd;
+}
+
+/* line 161, app/assets/stylesheets/sign_up.scss */
+.signupPopup {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 167, app/assets/stylesheets/sign_up.scss */
+.formPopup {
+  display: none;
+  position: fixed;
+  left: 45%;
+  top: 5%;
+  transform: translate(-50%, 5%);
+  z-index: 9;
+  margin-left: 40%;
+}

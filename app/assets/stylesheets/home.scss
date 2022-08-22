@@ -1,0 +1,242 @@
+* {
+    font-size: 20px;
+}
+
+.nav_menu {
+    margin-left: 35%;
+}
+
+.login_btn {
+    border: none;
+    border-radius: 10px;
+    background-color: #86DB99;
+    margin-left: 50%;
+    height: 40px;
+    width: 5%;
+    position: absolute;
+    margin-top: -2%;
+    font-size: 16px;
+    font-family: 'poppins', sans-serif;
+}
+
+.login_btn:hover {
+    background-color: #4e7d57;
+    color: white;
+}
+
+.signup_btn {
+    border: none;
+    border-radius: 10px;
+    background-color: #86DB99;
+    height: 40px;
+    position: absolute;
+    margin-left: 52%;
+    margin-top: -2%;
+    font-size: 16px;
+    width: 10%;
+    font-family: 'poppins', sans-serif;
+}
+
+.signup_btn:hover {
+    background-color: #4e7d57;
+    color: white;
+}
+
+.cont {
+    color: #86DB99;
+}
+
+.total {
+    background-color: rgb(241, 249, 240);
+    height: 10vh;
+    width: 100%;
+    font-family: 'poppins', sans-serif;
+}
+
+.logo-img {
+    width: 20%;
+    position: absolute;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin-left: 25%;
+    padding-top: 1%;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+}
+
+ul li a {
+    display: block;
+    padding: 8px 25px;
+    color: #333;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #86DB99;
+}
+
+ul li ul.dropdown {
+    min-width: 100%;
+    /* Set width of the dropdown */
+    background: #f2f2f2;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+    /* Display the dropdown */
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown_logout {
+    background: #888686;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+
+ul li:hover ul.dropdown_logout {
+    display: block;
+}
+
+ul li ul.dropdown_logout li {
+    display: block;
+}
+
+.sear_img {
+    width: 100%;
+    position: absolute;
+    height: 52vh;
+}
+
+
+.home_video {
+    margin-top: 28.6%;
+    width: 33%;
+}
+
+.home_video2 {
+    width: 33%;
+}
+
+.home_video3 {
+    width: 33%;
+}
+
+.togel {
+    margin-left: 50%;
+    margin-top: -1.4%;
+    position: absolute;
+}
+
+.sear_pg p {
+    color: white;
+    position: absolute;
+    font-weight: 900;
+    font-size: 46px;
+    margin-left: 24%;
+    font-family: 'poppins', sans-serif;
+    font-variant: small-caps;
+    margin-top: 5%;
+    line-height: 1;
+}
+
+.abt_1 {
+    width: 40%;
+    margin-left: 60%;
+    margin-top: 6%;
+    position: absolute;
+}
+
+.abt_cont h1 {
+    font-weight: bolder;
+    font-size: 70px;
+    margin-top: 6%;
+    margin-left: 4%;
+}
+
+.abt_cont p {
+    margin-top: 6%;
+    margin-left: 4%;
+    line-height: 2.4;
+    font-size: 20px;
+}
+
+.log_box {
+    width: 40%;
+    height: 30%;
+    margin-left: 29%;
+    margin-top: -20%;
+    position: absolute;
+}
+
+.logout {
+    margin-left: 100%;
+    border: none;
+    font-size: 40px;
+    position: absolute;
+    margin-top: -2%;
+    color: black;
+}
+
+.user_pers {
+    margin-left: 60%;
+    margin-top: -2%;
+    position: absolute;
+}
+
+.cont {
+    width: 85vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 10px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+.img {
+    width: 100%;
+}
+
+@keyframes slide {
+
+    25% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}

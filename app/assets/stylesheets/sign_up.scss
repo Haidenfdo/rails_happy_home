@@ -1,0 +1,579 @@
+.sign_box {
+    width: 40%;
+    height: 30%;
+    margin-left: 29%;
+    margin-top: -30%;
+    position: absolute;
+}
+
+.signup_image {
+    width: 50%;
+    height: 105.4vh;
+    margin-left: 50%;
+    margin-top: -8.4%;
+}
+
+#sign_inp {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    margin-left: 10%;
+    margin-top: 6%;
+    width: 40%;
+    height: 55px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: aliceblue;
+    padding-left: 3.5%;
+}
+
+#sign_inp1 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    margin-left: 24%;
+    margin-top: 6%;
+    width: 50%;
+    height: 55px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: aliceblue;
+    padding-left: 3.5%;
+}
+
+#sign_inp11 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    margin-left: -44%;
+    margin-top: -20%;
+    position: absolute;
+    width: 60%;
+    height: 75px;
+    background-color: rgb(203, 201, 201);
+    font-size: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+
+#sign_inp12 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    margin-left: -44%;
+    margin-top: -2%;
+    width: 60%;
+    height: 75px;
+    font-size: 20px;
+    position: absolute;
+    background-color: rgb(203, 201, 201);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+
+#sign_inp3 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    margin-left: -44%;
+    margin-top: 16%;
+    width: 60%;
+    height: 75px;
+    font-size: 20px;
+    position: absolute;
+    background-color: rgb(203, 201, 201);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+
+#sign_inp2 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    margin-left: 24%;
+    margin-top: 6%;
+    width: 50%;
+    height: 55px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: aliceblue;
+    padding-left: 3.5%;
+}
+
+#sign_inp4 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    margin-left: -44%;
+    margin-top: 34%;
+    width: 60%;
+    height: 75px;
+    font-size: 20px;
+    position: absolute;
+    background-color: rgb(203, 201, 201);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+
+#sign_inp5 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    color: black;
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 26%;
+    margin-top: 4%;
+    background-color: rgb(203, 201, 201);
+    font-size: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+
+#sign_inp6 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    color: black;
+    border-radius: 5px;
+    margin-left: 26%;
+    margin-top: 2%;
+    width: 50%;
+    height: 50px;
+    background-color: rgb(203, 201, 201);
+    font-size: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+
+#sign_inp7 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    color: black;
+    margin-left: 26%;
+    margin-top: 2%;
+    border-radius: 5px;
+    width: 16%;
+    height: 50px;
+    background-color: rgb(203, 201, 201);
+    font-size: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+
+#sign_inp8 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    color: black;
+    border-radius: 5px;
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 24%;
+    height: 14vh;
+    background-color: rgb(203, 201, 201);
+    font-size: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+
+#sign_inp9 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    color: black;
+    margin-top: 2%;
+    border-radius: 5px;
+    width: 24%;
+    margin-left: 26%;
+    height: 50px;
+    background-color: rgb(203, 201, 201);
+    font-size: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+
+#sign_inp10 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    color: black;
+    margin-left: 2%;
+    margin-top: 2%;
+    border-radius: 5px;
+    width: 24%;
+    height: 50px;
+    background-color: rgb(203, 201, 201);
+    font-size: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+
+#sign_inp13 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    color: black;
+    border-radius: 5px;
+    margin-left: 0.8%;
+    margin-top: 2%;
+    width: 16%;
+    height: 50px;
+    background-color: rgb(203, 201, 201);
+    font-size: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+
+#sign_inp14 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    color: black;
+    border-radius: 5px;
+    margin-left: 26%;
+    margin-top: 2%;
+    width: 24%;
+    height: 50px;
+    background-color: rgb(203, 201, 201);
+    font-size: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+
+#sign_inp15 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    color: black;
+    border-radius: 5px;
+    width: 24%;
+    margin-left: 2%;
+    height: 50px;
+    background-color: rgb(203, 201, 201);
+    font-size: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+
+#sign_inp16 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    color: black;
+    margin-left: 26%;
+    margin-top: 2%;
+    border-radius: 5px;
+    width: 24%;
+    height: 50px;
+    background-color: rgb(203, 201, 201);
+    font-size: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+
+#sign_inp17 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    color: black;
+    margin-left: 0.8%;
+    margin-top: 2%;
+    border-radius: 5px;
+    width: 16%;
+    height: 50px;
+    background-color: rgb(203, 201, 201);
+    font-size: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+
+#sign_inp18 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    color: black;
+    margin-left: -50.4%;
+    margin-top: 7%;
+    border-radius: 5px;
+    width: 24%;
+    height: 50px;
+    position: absolute;
+    background-color: rgb(203, 201, 201);
+    font-size: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+
+#sign_input {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    margin-left: 24%;
+    margin-top: 6%;
+    width: 48%;
+    height: 55px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: aliceblue;
+    padding-left: 3.5%;
+}
+
+#sign_input1 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    margin-left: 34%;
+    margin-top: 6%;
+    width: 38%;
+    height: 55px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: aliceblue;
+    padding-left: 3.5%;
+}
+
+#sign_oup {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    margin-left: 4%;
+    position: absolute;
+    margin-top: 3%;
+    width: 20%;
+    height: 55px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: aliceblue;
+    padding-left: 3.5%;
+}
+
+.f_sub {
+    margin-left: 40%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border-radius: 1.5vh;
+    height: 48px;
+    width: 16%;
+    background-color: #22b9b1;
+    color: white;
+    font-weight: 900;
+    font-size: larger;
+    border: none;
+}
+
+.f_sub1 {
+    margin-left: -44%;
+    margin-top: 52%;
+    margin-bottom: 5%;
+    width: 60%;
+    height: 75px;
+    background-color: #22b9b1;
+    color: white;
+    font-weight: 900;
+    font-size: larger;
+    border: none;
+    position: absolute;
+}
+
+.f_sub2 {
+    margin-left: -44%;
+    margin-top: 16%;
+    margin-bottom: 5%;
+    width: 60%;
+    height: 75px;
+    background-color: #22b9b1;
+    color: white;
+    font-weight: 900;
+    font-size: larger;
+    border: none;
+    position: absolute;
+}
+
+.add_btn {
+    margin-left: 46%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    height: 62px;
+    width: 50%;
+    margin-left: 26%;
+    background-color: #22b9b1;
+    color: white;
+    font-weight: 900;
+    font-size: larger;
+    border: none;
+}
+
+.add_btn:hover {
+    background-color: #18c6bd;
+}
+
+.f_sub:hover {
+    background-color: #18c6bd;
+}
+
+.signupPopup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.formPopup {
+    display: none;
+    position: fixed;
+    left: 45%;
+    top: 5%;
+    transform: translate(-50%, 5%);
+    z-index: 9;
+    margin-left: 40%;
+}
+#sign_inp19 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    color: black;
+    border-radius: 5px;
+    width: 24%;
+    height: 50px;
+    margin-left: 6%;
+    position: absolute;
+    background-color: rgb(203, 201, 201);
+    font-size: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+#sign_inp20 {
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    color: black;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-left: 6%;
+    width: 24%;
+    height: 50px;
+    position: absolute;
+    background-color: rgb(203, 201, 201);
+    font-size: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 3.5%;
+}
+.r_sub{
+    width: 24%;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 4%;
+    margin-left: 6%;
+    background-color: #22b9b1;
+    font-weight: 900;
+    font-size: larger;
+    border: none;
+}
+.rev_img{
+    position: absolute;
+    margin-left: 60%;
+    margin-top: -12%;
+}
+.pg_review{
+    width: 50%;
+    height: 14vh;
+    background-color: rgb(241, 249, 240);
+    margin-left: 10%;
+}
+.rev_name{
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 6%;
+}
+.rev_msg{
+    margin-left:20%;
+    color: rgb(93, 92, 92);
+}
+

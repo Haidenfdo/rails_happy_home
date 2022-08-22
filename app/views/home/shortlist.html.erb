@@ -1,0 +1,83 @@
+<div class="total">
+    <%= image_tag("logo.png",alt: "logo" ,class: "logo-img" , id:"logo-img-3") %>
+        <div class="drop_down">
+            <ul>
+                <ul>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li>
+                        <a href="#">Categories ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="/pg">Pg</a></li>
+                            <li><a href="/hostel">Hostels</a></li>
+                            <li><a href="/house">House</a></li>
+                            <li><a href="/apartments">Apartments</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+                <%if session[:user_id] !=nil%>
+                    <li class="user_pers">
+                        <i class="fa-solid fa-user logout"></i>
+                        <% logged_user=User.find(session[:user_id]) %>
+                            <%= logged_user["fname"]%>
+                                <ul class="dropdown_logout">
+                                    <li><a href="/logout">Logout</a></li>
+                                    <li><a href="/shortlist">My Shortlist</a></li>
+                                </ul>
+                    </li>
+                    <%else%>
+                        <a href="/login"><button class="login_btn">Login</button></a>
+                        <a href="/signup"><button class="signup_btn">Create Account</button></a>
+                        <%end%>
+
+
+        </div>
+</div>
+<%@items.each do |shortlist|%>
+ <a href="/baby_pg">
+ <% pg = AddPg.find(shortlist.pg_id) %>
+        <div class="main_center">
+            <br>
+            <h5>
+                <%= pg.Pg_name %>
+            </h5>
+            <hr>
+            <ul>
+                <li class="rent_class">
+                    <i class="fa-solid fa-indian-rupee-sign">
+                        <%= pg.Monthly_rent %>
+                    </i><br>Rent month
+                </li>
+                <li class="share_pg">
+                    <h6>Shared</h6>
+                    <%= pg.Room_type %>
+                </li>
+                <li class="deposit_pg">
+                    <h6>Deposit</h6><i class="fa-solid fa-indian-rupee-sign">
+                        <%= pg.Deposit %>
+                    </i>
+                </li>
+            </ul>
+            <hr>
+            <div class="pg_photos">
+                <%= image_tag(pg.pg_photo,class: "pg_img1" )%>
+            </div>
+            <div class="facilities">
+
+
+            </div>
+        </div>
+        <ul>
+            <li class="foods">
+                <i class="fa-solid fa-face-smile">&nbsp;&nbsp;Meals - <%= pg.Food %></i>
+            </li>
+            <li class="time">
+                <i class="fa-solid fa-clock">&nbsp;&nbsp;Closing TIme - <%= pg.Closing_time %></i>
+            </li>
+        </ul>
+    </a>
+
+
+    <a href=""><button class="own_det">Get Owner Details</button></a>
+    <%end%>

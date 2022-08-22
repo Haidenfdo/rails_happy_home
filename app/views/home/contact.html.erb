@@ -1,0 +1,82 @@
+<div class="total">
+    <%= image_tag("logo.png",alt: "logo" ,class: "logo-img" , id:"logo-img-3") %>
+        <div class="drop_down">
+            <ul>
+                <ul>
+                    <li><a href="/index">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li>
+                        <a href="#">Categories ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="/pg">Pg</a></li>
+                            <li><a href="/hostel">Hostels</a></li>
+                            <li><a href="/house">House</a></li>
+                            <li><a href="/apartments">Apartments</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+                <%if session[:user_id] !=nil%>
+                    <li class="user_pers">
+                        <i class="fa-solid fa-user logout"></i>
+                        <% logged_user=User.find(session[:user_id]) %>
+                            <%= logged_user["fname"]%>
+                                <ul class="dropdown_logout">
+                                    <li><a href="/logout">Logout</a></li>
+                                    <li><a href="/shortlist">My Shortlist</a></li>
+                                </ul>
+                    </li>
+                    <%else%>
+                        <a href="/login"><button class="login_btn">Login</button></a>
+                        <a href="/signup"><button class="signup_btn">Create Account</button></a>
+                        <%end%>
+
+        </div>
+</div>
+<!-- <div class="search">
+    <form action="#">
+        <input type="text" class="search" placeholder="Search Pg's" name="search">
+        <%= image_tag("search_icon.png",alt: "logo" ,class: "search-img" , id:"logo-img-3") %>
+    </form>
+    </div> -->
+<div class="back">
+    <p class="cont_head">Contact<span class="cont_head1"> Us</span></p>
+    <p class="abt_cont">No matter What you need -- to find out more about our experience<br><br>
+        ta ask us how to improve our web application -- do not hesitate to <br><br>
+        get in touch with us.We will be happy to talk with you to share <br><br>
+        our experience and to give you ideas about the right pg.</p>
+    <i class="fa-solid fa-phone-volume caller">&nbsp;&nbsp; 6369746122</i>
+    <%= image_tag("contact.jpeg",alt: "contact" ,class: "contact_img" , id:"logo-img-3") %>
+        <i class="fa-brands fa-instagram-square insta"></i>
+        <i class="fa-brands fa-facebook-square faceb"></i>
+        <i class="fa-brands fa-twitter-square twitt"></i>
+        <div class="cont_form">
+            <form action="home/create" method="post">
+                <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+                <input type="text" id="cont_name" placeholder="Name" name="user[name]" required><br>
+                <input type="email" id="cont_name" placeholder="Email" name="user[email]" required><br>
+                <input type="tel" id="cont_name" placeholder="phonenumber" name="user[pnumber]" required><br>
+                <input type="text" id="cont_name" placeholder="message" name="user[message]" required><br><br>
+                <% if flash[:error]%>
+                    <label class="text-danger">
+                        <%= flash[:error] %>
+                    </label> <br>
+                    <% end %>
+                        <%if flash[:notice]%>
+                            <label class="text-success">
+                                <%= flash[:notice]%>
+                            </label><br>
+                            <% end %>
+                                <button type="submit" class="cont_btn">Submit</button>
+
+            </form>
+            <div class="cont_content">Find your<span class="cont_content1">Place</span></div>
+        </div>
+</div>
+</div>
+<div>
+    <form>
+        
+    </form>
+</div>
+<div class="contact_end"></div>

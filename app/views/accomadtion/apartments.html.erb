@@ -1,0 +1,123 @@
+<div class="total">
+    <%= image_tag("logo.png",alt: "logo" ,class: "logo-img" , id:"logo-img-3") %>
+        <div class="drop_down">
+            <ul>
+                <ul>
+                    <form id="search_form" action="/location" post="get">
+                        <input list="location" placeholder="Pg Location" id="search" name="loc"><i
+                            class="fa-solid fa-magnifying-glass search"></i>
+                        <datalist id="location">
+                           <%@apartments.each do|location|%>
+                           <option value="<%= location.Pglocation%>">
+                           <%end%>
+                        </datalist>
+                        <input type="submit" id="search_btn">
+                    </form>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li>
+                        <a href="#">Categories ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="/pg">Pg</a></li>
+                            <li><a href="/hostel">Hostels</a></li>
+                            <li><a href="/house">House</a></li>
+                            <li><a href="/apartments">Apartments</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/contact">Contact</a></li>
+                    <%if @user['role']=="admin" %>
+                        <li><a href="/addpg"><button>ADD PG</button></a></li>
+                        <%end%>
+                </ul>
+                <%if session[:user_id] !=nil%>
+                    <li class="user_pers">
+                        <i class="fa-solid fa-user logout"></i>
+                        <% logged_user=User.find(session[:user_id]) %>
+                            <%= logged_user["fname"]%>
+                                <ul class="dropdown_logout">
+                                    <li><a href="/logout">Logout</a></li>
+                                    <li><a href="/shortlist">My Shortlist</a></li>
+                                </ul>
+                    </li>
+                    <%else%>
+                        <a href="/login"><button class="login_btn">Login</button></a>
+                        <a href="/signup"><button class="signup_btn">Create Account</button></a>
+                        <%end%>
+        </div>
+</div>
+<%@apartments.each do |pg|%>
+    <a href="/baby_pg/<%= pg.id %>">
+        <div class="main_center">
+            <br>
+            <h5>
+                <%= pg.Pg_name %>
+            </h5>
+            <hr>
+            <ul>
+                <li class="rent_class">
+                    <i class="fa-solid fa-indian-rupee-sign">
+                        <%= pg.Monthly_rent %>
+                    </i><br>Rent month
+                </li>
+                <li class="share_pg">
+                    <h6>Shared</h6>
+                    <%= pg.Room_type %>
+                </li>
+                <li class="deposit_pg">
+                    <h6>Deposit</h6><i class="fa-solid fa-indian-rupee-sign">
+                        <%= pg.Deposit %>
+                    </i>
+                </li>
+            </ul>
+            <hr>
+            <div class="pg_photos">
+                <%= image_tag(pg.pg_photo,class: "pg_img1" )%>
+            </div>
+            <div class="facilities">
+
+
+            </div>
+        </div>
+        <ul>
+            <li class="foods">
+                <i class="fa-solid fa-face-smile">&nbsp;&nbsp;Meals - <%= pg.Food %></i>
+            </li>
+            <li class="time">
+                <i class="fa-solid fa-clock">&nbsp;&nbsp;Closing TIme - <%= pg.Closing_time %></i>
+            </li>
+        </ul>
+    </a>
+
+
+    <a href="#"><button class="own_det">Get Owner Details</button></a>
+    <a href="/shortlist/<%=pg.id%>"><button class="hrt_btn" id="hrt_btn" onclick="changeColor1()">
+            <i class="fa-regular fa-heart heart"></i></button></a>
+
+    <%end%>
+     <div class="side_cont">
+           <form action="getResults" method="get">
+
+                <p class="pref_prof">PG for</p>
+                <input type="radio" class="gender" id="male" name="gender" onchange="location.href='/pg/male'">&nbsp;&nbsp;Male
+                <input type="radio" class="gender" id="female" name="gender" onchange="location.href='/pg/female'">&nbsp;&nbsp;Female<br>
+                <p class="pref_prof">Room Type</p> 
+                <input type="checkbox" id="filter" onchange="location.href = '<%= params[:gender]%>'+'/single'">&nbsp;&nbsp; Single Sharing &nbsp;&nbsp;
+                <input type="checkbox" id="filter" onchange="location.href = '<%= params[:gender] %>'+'/double'">&nbsp;&nbsp; Double Sharing<br>
+                <input type="checkbox" id="filtering" onchange="location.href = '<%= request.original_fullpath %>'+'&room_type=three'">&nbsp;&nbsp; Three Sharing &nbsp;&nbsp;
+                <input type="checkbox" id="filtering" onchange="location.href = '<%= request.original_fullpath %>'+'&room_type=four'">&nbsp;&nbsp; Four Sharing <br>
+                <input type="checkbox" id="att_bath" onchange="location.href = '<%= request.original_fullpath %>'+'&room_type=attach_bath'">&nbsp;&nbsp; Attach Bathroom<br>
+                <p class="pref_prof">Preferred for</p>
+                <input type="checkbox" id="filter" onchange="location.href = '<%= request.original_fullpath %>'+'&Preferred_for=student'">&nbsp;&nbsp;Student &nbsp;&nbsp;
+                <input type="checkbox" id="filter" onchange="location.href = '<%= request.original_fullpath %>'+'&Preferred_for=professional'">&nbsp;&nbsp;Professional
+                <p class="pref_prof">Food Included</p>
+                <input type="checkbox" id="filter" onchange="location.href = '<%= request.original_fullpath %>'+'&Food_Included=breakfast'">&nbsp;&nbsp;Breakfast &nbsp;&nbsp;
+                <input type="checkbox" id="filter" onchange="location.href = '<%= request.original_fullpath %>'+'&Food_Included=lunch'">&nbsp;&nbsp;Lunch &nbsp;&nbsp;
+                <input type="checkbox" id="filter" onchange="location.href = '<%= request.original_fullpath %>'+'&Food_Included=dinner'">&nbsp;&nbsp;Dinner &nbsp;&nbsp;<br>
+
+            </form>     
+        </div>
+        <script>
+            function changeColor1() {
+                document.getElementById('hrt_btn').setAttribute("hidden", true);
+                alert("The Apartment is shortlisted");
+            }

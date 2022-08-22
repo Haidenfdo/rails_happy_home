@@ -1,0 +1,271 @@
+/* line 1, app/assets/stylesheets/home.scss */
+* {
+  font-size: 20px;
+}
+
+/* line 5, app/assets/stylesheets/home.scss */
+.nav_menu {
+  margin-left: 35%;
+}
+
+/* line 9, app/assets/stylesheets/home.scss */
+.login_btn {
+  border: none;
+  border-radius: 10px;
+  background-color: #86DB99;
+  margin-left: 50%;
+  height: 40px;
+  width: 5%;
+  position: absolute;
+  margin-top: -2%;
+  font-size: 16px;
+  font-family: 'poppins', sans-serif;
+}
+
+/* line 22, app/assets/stylesheets/home.scss */
+.login_btn:hover {
+  background-color: #4e7d57;
+  color: white;
+}
+
+/* line 27, app/assets/stylesheets/home.scss */
+.signup_btn {
+  border: none;
+  border-radius: 10px;
+  background-color: #86DB99;
+  height: 40px;
+  position: absolute;
+  margin-left: 52%;
+  margin-top: -2%;
+  font-size: 16px;
+  width: 10%;
+  font-family: 'poppins', sans-serif;
+}
+
+/* line 40, app/assets/stylesheets/home.scss */
+.signup_btn:hover {
+  background-color: #4e7d57;
+  color: white;
+}
+
+/* line 45, app/assets/stylesheets/home.scss */
+.cont {
+  color: #86DB99;
+}
+
+/* line 49, app/assets/stylesheets/home.scss */
+.total {
+  background-color: #f1f9f0;
+  height: 10vh;
+  width: 100%;
+  font-family: 'poppins', sans-serif;
+}
+
+/* line 56, app/assets/stylesheets/home.scss */
+.logo-img {
+  width: 20%;
+  position: absolute;
+}
+
+/* line 61, app/assets/stylesheets/home.scss */
+ul {
+  padding: 0;
+  list-style: none;
+  margin-left: 25%;
+  padding-top: 1%;
+}
+
+/* line 68, app/assets/stylesheets/home.scss */
+ul li {
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  text-align: left;
+}
+
+/* line 75, app/assets/stylesheets/home.scss */
+ul li a {
+  display: block;
+  padding: 8px 25px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 82, app/assets/stylesheets/home.scss */
+ul li a:hover {
+  color: #86DB99;
+}
+
+/* line 86, app/assets/stylesheets/home.scss */
+ul li ul.dropdown {
+  min-width: 100%;
+  /* Set width of the dropdown */
+  background: #f2f2f2;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+
+/* line 96, app/assets/stylesheets/home.scss */
+ul li:hover ul.dropdown {
+  display: block;
+  /* Display the dropdown */
+}
+
+/* line 101, app/assets/stylesheets/home.scss */
+ul li ul.dropdown li {
+  display: block;
+}
+
+/* line 105, app/assets/stylesheets/home.scss */
+ul li ul.dropdown_logout {
+  background: #888686;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+
+/* line 113, app/assets/stylesheets/home.scss */
+ul li:hover ul.dropdown_logout {
+  display: block;
+}
+
+/* line 117, app/assets/stylesheets/home.scss */
+ul li ul.dropdown_logout li {
+  display: block;
+}
+
+/* line 121, app/assets/stylesheets/home.scss */
+.sear_img {
+  width: 100%;
+  position: absolute;
+  height: 52vh;
+}
+
+/* line 128, app/assets/stylesheets/home.scss */
+.home_video {
+  margin-top: 28.6%;
+  width: 33%;
+}
+
+/* line 133, app/assets/stylesheets/home.scss */
+.home_video2 {
+  width: 33%;
+}
+
+/* line 137, app/assets/stylesheets/home.scss */
+.home_video3 {
+  width: 33%;
+}
+
+/* line 141, app/assets/stylesheets/home.scss */
+.togel {
+  margin-left: 50%;
+  margin-top: -1.4%;
+  position: absolute;
+}
+
+/* line 147, app/assets/stylesheets/home.scss */
+.sear_pg p {
+  color: white;
+  position: absolute;
+  font-weight: 900;
+  font-size: 46px;
+  margin-left: 24%;
+  font-family: 'poppins', sans-serif;
+  font-variant: small-caps;
+  margin-top: 5%;
+  line-height: 1;
+}
+
+/* line 159, app/assets/stylesheets/home.scss */
+.abt_1 {
+  width: 40%;
+  margin-left: 60%;
+  margin-top: 6%;
+  position: absolute;
+}
+
+/* line 166, app/assets/stylesheets/home.scss */
+.abt_cont h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  margin-top: 6%;
+  margin-left: 4%;
+}
+
+/* line 173, app/assets/stylesheets/home.scss */
+.abt_cont p {
+  margin-top: 6%;
+  margin-left: 4%;
+  line-height: 2.4;
+  font-size: 20px;
+}
+
+/* line 180, app/assets/stylesheets/home.scss */
+.log_box {
+  background-color: #86DB99;
+  width: 40%;
+  margin-left: 26%;
+  margin-top: 10%;
+  border-radius: 12px;
+}
+
+/* line 188, app/assets/stylesheets/home.scss */
+.logout {
+  margin-left: 100%;
+  border: none;
+  font-size: 40px;
+  position: absolute;
+  margin-top: -2%;
+  color: black;
+}
+
+/* line 197, app/assets/stylesheets/home.scss */
+.user_pers {
+  margin-left: 60%;
+  margin-top: -2%;
+  position: absolute;
+}
+
+/* line 203, app/assets/stylesheets/home.scss */
+.cont {
+  width: 85vmin;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  border: 10px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* line 215, app/assets/stylesheets/home.scss */
+.wrapper {
+  width: 100%;
+  display: flex;
+  animation: slide 16s infinite;
+}
+
+/* line 221, app/assets/stylesheets/home.scss */
+.img {
+  width: 100%;
+}
+
+@keyframes slide {
+  25% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}

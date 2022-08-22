@@ -1,0 +1,2 @@
+class PgReview < ApplicationRecord
+end

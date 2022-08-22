@@ -1,0 +1,177 @@
+<div class="total">
+    <%= image_tag("logo.png",alt: "logo" ,class: "logo-img" , id:"logo-img-3") %>
+        <div class="drop_down">
+            <ul>
+                <ul>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li>
+                        <a href="#">Categories ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="/pg">Pg</a></li>
+                            <li><a href="/hostel">Hostels</a></li>
+                            <li><a href="/house">House</a></li>
+                            <li><a href="/apartments">Apartments</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+                <%if session[:user_id] !=nil%>
+                    <li class="user_pers">
+                        <i class="fa-solid fa-user logout"></i>
+                        <% logged_user=User.find(session[:user_id]) %>
+                            <%= logged_user["fname"]%>
+                                <ul class="dropdown_logout">
+                                    <li><a href="/logout">Logout</a></li>
+                                    <li><a href="/shortlist">My Shortlist</a></li>
+                                </ul>
+                    </li>
+                    <%else%>
+                        <a href="/login"><button class="login_btn">Login</button></a>
+                        <a href="/signup"><button class="signup_btn">Create Account</button></a>
+                        <%end%>
+
+                            <%# <i class="fa-solid fa-sliders togel"></i> %>
+        </div>
+</div><br>
+<div class="details">
+    <i class="fa-solid fa-house-chimney home"></i><br>
+    <div class="vl"></div>
+    <p id="address1">
+        <%=@showpgs.Pg_name%>
+    </p>
+    <p id="address2">
+        VGP Baby Nagar,Baby Nagar, Velachery,Chennai
+    </p>
+    <div class="vl1"></div>
+    <i class="fa-solid fa-indian-rupee-sign rup_sign">
+        <%=@showpgs.Monthly_rent%>
+    </i><br>
+    <p id="rent">Monthly Rent
+    </p>
+    <div class="vl2"></div>
+    <a href=""><button class="own_det1">Get Owner Details</button></a>
+    <div class="vl3"></div>
+    <a href="/shortlist/<%=@showpgs.id%>"><button class="hrt_btn1" id="hrt_btn" onclick="changeColor()">
+            <i class="fa-regular fa-heart heart"></i></button></a>
+</div>
+<div class="main_details">
+    <%= image_tag(@showpgs.pg_photo,alt: "pg_photo" ,class: "pg_photo" , id:"pg_photo") %>
+        <p class="meals"><i class="fa-solid fa-face-smile meals_icon"></i>&nbsp;&nbsp;Meals</p>
+        <p class="timings"><i class="fa-solid fa-clock timings_icon"></i>&nbsp;&nbsp;Timings</p>
+        <p class="bk"><i class="fa-solid fa-motorcycle b&k_icon"></i>&nbsp;&nbsp;Bike&Cycle</p>
+        <p class="calendar"><i class="fa-solid fa-calendar-days calendar_icon"></i>&nbsp;&nbsp;Calendar</p>
+        <p class="gate_close"><i class="fa-solid fa-key gate_close_icon"></i>&nbsp;&nbsp;Not Provided</p>
+        <a href="#"><button class="own_det_main">Get Owner Details</button></a>
+        <a href="#"><i class="fa-solid fa-message message"></i></a>
+
+</div>
+<div>
+    <p class="sharing_details">
+        Sharing Room Details :</p>
+    <p class="room_amen">Room Amentities :</p>
+    <div class="cupboard">
+        <i class="fa-solid fa-clipboard cupboard_icon"></i><br>
+        <p>Cupboard</p>
+    </div>
+    <div class="bathroom">
+        <i class="fa-solid fa-sink bathroom_icon"></i>
+        <p>Bathroom</p>
+    </div>
+    <div class="bed">
+        <i class="fa-solid fa-bed bed_icon"></i>
+        <p>Bedding</p>
+    </div>
+    <div class="air_con">
+        <i class="fa-solid fa-fan air_icon"></i>
+        <p>airconditionar</p>
+    </div>
+</div>
+<div>
+    <p class="sharing_details">PG Rules :</p><br>
+    <div class="cupboard">
+        <i class="fa-solid fa-smoking cupboard_icon"></i>
+        <p>Smoking</p>
+    </div>
+    <div class="bathroom">
+        <i class="fa-solid fa-child-reaching bathroom_icon"></i>
+        <p>Gaurdianentry</p>
+    </div>
+    <div class="bed">
+        <i class="fa-solid fa-champagne-glasses bed_icon"></i>
+        <p>Drinking</p>
+    </div>
+</div>
+<div>
+    <p class="sharing_details">
+        Common Amentities :
+    </p><br>
+    <div class="cupboard">
+        <i class="fa-solid fa-broom cupboard_icon"></i>
+        <p>Roomcleaning</p>
+    </div>
+    <div class="bathroom">
+        <i class="fa-solid fa-wifi bathroom_icon"></i>
+        <p>wi-fi</p>
+    </div>
+    <div class="bed">
+        <i class="fa-solid fa-tower-broadcast bed_icon"></i>
+        <p>
+            power_backup
+        </p>
+    </div>
+    <div class="air_con">
+        <i class="fa-solid fa-utensils air_icon"></i>
+        <p>Cooking</p>
+    </div>
+</div>
+<div>
+    <p class="sharing_details">Description :</p><br>
+    <p class="description">
+        PG in a fully furnished home in a safe gated community with 4 bedrooms<br>
+        with attached bathrooms. Has all amenities including wifi internet<br>
+        , 24/7 water connection, AC, , washing machine,fridge, power backup, secutiry, Gas connection.<br><br>
+
+        There are no restrictions. Just want the house to be kept clean. Should be open minded.<br><br>
+
+        All sharing is available
+    </p>
+</div>
+<div>
+    <p class="sharing_details">Review Us</p><br>
+    <form action="/review_save" method=" post">
+        <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+        <input type="text" placeholder="Enter Your One line comment" id="sign_inp19" name="review[ratings]"><br>
+        <input type="textbox" placeholder="Description" id="sign_inp20" name="review[comment]"><br>
+        <input type="hidden" name="review[users_id]" value="<%=session[:user_id]%>">
+        <input type="hidden" name="review[add_pgs_id]" value="<%=@asw%>">
+        <button type="submit" class="r_sub">Submit</button>
+    </form>
+    <%= image_tag("review.jpg",alt: "rev_image" ,class: "rev_img" , id:"rev_img1") %>
+</div><br><br><br>
+<p class="sharing_details">Reviews</p><br><br>
+<%PgReview.where(add_pgs_id:@asw).each do |pg|%>
+<div class="pg_review">
+    <p class="rev_name"><%=User.find(pg.users_id).fname%></p>
+    <p class="rev_msg"><%=pg.comment%></p>
+</div><br><br><br>
+<%end%>
+<div class="pg_end">
+
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+    function changeColor() {
+        document.getElementById('hrt_btn').setAttribute("hidden", true);
+        alert("The Pg is shortlisted");
+    }
+
+</script>

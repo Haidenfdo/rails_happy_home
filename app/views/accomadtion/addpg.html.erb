@@ -1,0 +1,80 @@
+<div class="total">
+    <%= image_tag("logo.png",alt: "logo" ,class: "logo-img" , id:"logo-img-3") %>
+        <div class="drop_down">
+            <ul>
+                <ul>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li>
+                        <a href="#">Categories ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="/pg">Pg</a></li>
+                            <li><a href="/hostel">Hostels</a></li>
+                            <li><a href="/house">House</a></li>
+                            <li><a href="/apartments">Apartments</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/addpg"><button>ADD PG</button></a></li>
+                </ul>
+                <%if session[:user_id] !=nil%>
+                    <li class="user_pers">
+                        <i class="fa-solid fa-user logout"></i>
+                        <% logged_user=User.find(session[:user_id]) %>
+                            <%= logged_user["fname"]%>
+                                <ul class="dropdown_logout">
+                                    <li><a href="/logout">Logout</a></li>
+                                    <li><a href="/shortlist">My Shortlist</a></li>
+                                </ul>
+                    </li>
+                    <%else%>
+                        <a href="/login"><button class="login_btn">Login</button></a>
+                        <a href="/signup"><button class="signup_btn">Create Account</button></a>
+                        <%end%>
+        </div>
+</div>
+<div class="addpg1_box">
+    <form action="accomadtion/create" method="post" enctype="multipart/form-data">
+        <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+        <input type=" text" placeholder="Pg_name" name="accomadtion[Pg_name]"  id="sign_inp5" required>
+         <input list="gender" placeholder="gender" name="accomadtion[gender]" id="sign_inp6" required>
+            <datalist id="gender">
+            <option value="Male"></option>
+            <option value="Female"></option>
+            </datalist> 
+        <input list="sharing" placeholder="Room_type" name="accomadtion[Room_type]" id="sign_inp7" required>
+        <datalist id="sharing">
+        <option value="single sharing">
+        <option value="double sharing">
+        <option value="three sharing">
+        <option value="four sharing">
+        </datalist>
+           <input list="category" placeholder="category" name="accomadtion[category]" id="sign_inp17" required>
+            <datalist id="category">
+            <option value="Pg">
+            <option value="Apartment">
+<option value="Hostel">
+<option value="Home">
+            </datalist>
+             <input list="foods" placeholder="Food" name="accomadtion[Food]" id="sign_inp13" required>
+        <datalist id="foods">
+            <option value="All"></option>
+            <option value="South Indian"></option>
+            <option value="Andhra"></option>
+            <option value="Kerala"></option>
+            </datalist>
+            <input type="tel" placeholder="Deposit" name="accomadtion[Deposit]"  id="sign_inp9" required>
+            <input type="text" placeholder="Monthly_rent" name="accomadtion[Monthly_rent]"  id="sign_inp15" required><br>
+            <input type="text" placeholder="Pg_location" name="accomadtion[Pglocation]" id="sign_inp14" required>
+        <input type="file" placeholder="Pg_photo" name="accomadtion[pg_photo]" id="sign_inp8" required>
+        <input type="text" placeholder="pg_location_url" name="accomadtion[map_url]" id="sign_inp18" required><br>
+            <input list="preffered" placeholder="preffered for
+            " name="accomadtion[preffered]" id="sign_inp16" required>
+            <datalist id="preffered">
+            <option value="students"></option>
+            <option value="professional"></option>
+            </datalist>
+             <input type="tel" placeholder="Closing Time" name="accomadtion[Closing_time]"  id="sign_inp10" required> 
+        <button type="submit" class="add_btn">Submit</button>
+    </form>
+</div>

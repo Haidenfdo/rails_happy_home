@@ -1,0 +1,122 @@
+I, [2022-08-18T00:32:37.576036 #109047]  INFO -- : [32541840-e7b4-4f91-b5c3-48d76697e67b] Started GET "/index" for 127.0.0.1 at 2022-08-18 00:32:37 +0530
+I, [2022-08-18T00:32:37.589735 #109047]  INFO -- : [a5a293d7-2d3d-4313-a098-b985d2a2b929] Started GET "/favicon.ico" for 127.0.0.1 at 2022-08-18 00:32:37 +0530
+F, [2022-08-18T00:32:37.590168 #109047] FATAL -- : [a5a293d7-2d3d-4313-a098-b985d2a2b929]   
+[a5a293d7-2d3d-4313-a098-b985d2a2b929] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[a5a293d7-2d3d-4313-a098-b985d2a2b929]   
+I, [2022-08-18T00:32:37.595093 #109047]  INFO -- : [32541840-e7b4-4f91-b5c3-48d76697e67b] Processing by HomeController#index as HTML
+I, [2022-08-18T00:32:37.604830 #109047]  INFO -- : [32541840-e7b4-4f91-b5c3-48d76697e67b]   Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 719)
+I, [2022-08-18T00:32:37.605899 #109047]  INFO -- : [32541840-e7b4-4f91-b5c3-48d76697e67b]   Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1312)
+I, [2022-08-18T00:32:37.606242 #109047]  INFO -- : [32541840-e7b4-4f91-b5c3-48d76697e67b] Completed 200 OK in 11ms (Views: 3.8ms | Allocations: 3300)
+I, [2022-08-18T00:32:37.611133 #109047]  INFO -- : [124ba6cb-617e-46df-925d-8924a8889217] Started GET "/assets/application-e5ecd47174d910dec8f72cb60d3b1c7b2a999692bee7bf6e249d9e77a2f1931d.css" for 127.0.0.1 at 2022-08-18 00:32:37 +0530
+F, [2022-08-18T00:32:37.611973 #109047] FATAL -- : [124ba6cb-617e-46df-925d-8924a8889217]   
+[124ba6cb-617e-46df-925d-8924a8889217] ActionController::RoutingError (No route matches [GET] "/assets/application-e5ecd47174d910dec8f72cb60d3b1c7b2a999692bee7bf6e249d9e77a2f1931d.css"):
+[124ba6cb-617e-46df-925d-8924a8889217]   
+I, [2022-08-18T00:32:37.611551 #109047]  INFO -- : [643c51bd-ce5f-4c32-a4f8-d46f93eb27e3] Started GET "/packs/js/application-6850977f3322550eede2.js" for 127.0.0.1 at 2022-08-18 00:32:37 +0530
+F, [2022-08-18T00:32:37.612569 #109047] FATAL -- : [643c51bd-ce5f-4c32-a4f8-d46f93eb27e3]   
+[643c51bd-ce5f-4c32-a4f8-d46f93eb27e3] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6850977f3322550eede2.js"):
+[643c51bd-ce5f-4c32-a4f8-d46f93eb27e3]   
+I, [2022-08-18T00:32:37.624028 #109047]  INFO -- : [cffbcfec-854f-4b9f-9a3e-b096891c8d02] Started GET "/assets/home_video-2509c5d4d49f0572bdb39cd069c71634cb2a060260fce23edb2b15c2cf84ee9f.mp4" for 127.0.0.1 at 2022-08-18 00:32:37 +0530
+F, [2022-08-18T00:32:37.624574 #109047] FATAL -- : [cffbcfec-854f-4b9f-9a3e-b096891c8d02]   
+[cffbcfec-854f-4b9f-9a3e-b096891c8d02] ActionController::RoutingError (No route matches [GET] "/assets/home_video-2509c5d4d49f0572bdb39cd069c71634cb2a060260fce23edb2b15c2cf84ee9f.mp4"):
+[cffbcfec-854f-4b9f-9a3e-b096891c8d02]   
+I, [2022-08-18T00:32:37.627555 #109047]  INFO -- : [edd38dd5-2030-4aee-904e-da6a045ccdb7] Started GET "/index" for 127.0.0.1 at 2022-08-18 00:32:37 +0530
+I, [2022-08-18T00:32:37.628175 #109047]  INFO -- : [edd38dd5-2030-4aee-904e-da6a045ccdb7] Processing by HomeController#index as HTML
+I, [2022-08-18T00:32:37.629593 #109047]  INFO -- : [edd38dd5-2030-4aee-904e-da6a045ccdb7]   Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 303)
+I, [2022-08-18T00:32:37.631065 #109047]  INFO -- : [edd38dd5-2030-4aee-904e-da6a045ccdb7]   Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 793)
+I, [2022-08-18T00:32:37.631445 #109047]  INFO -- : [edd38dd5-2030-4aee-904e-da6a045ccdb7] Completed 200 OK in 3ms (Views: 2.5ms | Allocations: 1221)
+I, [2022-08-18T00:32:37.630204 #109047]  INFO -- : [62cce3a6-9a00-4ee3-b255-12bb7b98c155] Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--be6a6fc2ddb1f7823f16ff1ae8fefda00ff10382/selvi.jpg" for 127.0.0.1 at 2022-08-18 00:32:37 +0530
+I, [2022-08-18T00:32:37.633353 #109047]  INFO -- : [62cce3a6-9a00-4ee3-b255-12bb7b98c155] Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+I, [2022-08-18T00:32:37.633471 #109047]  INFO -- : [62cce3a6-9a00-4ee3-b255-12bb7b98c155]   Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--be6a6fc2ddb1f7823f16ff1ae8fefda00ff10382", "filename"=>"selvi"}
+I, [2022-08-18T00:32:37.634589 #109047]  INFO -- : [62cce3a6-9a00-4ee3-b255-12bb7b98c155] Filter chain halted as :set_blob rendered or redirected
+I, [2022-08-18T00:32:37.634792 #109047]  INFO -- : [62cce3a6-9a00-4ee3-b255-12bb7b98c155] Completed 404 Not Found in 1ms (Allocations: 442)
+I, [2022-08-18T00:32:37.652695 #109047]  INFO -- : [a67a999a-7f09-48c6-8c3b-b7e949623e4b] Started GET "/assets/application-e5ecd47174d910dec8f72cb60d3b1c7b2a999692bee7bf6e249d9e77a2f1931d.css" for 127.0.0.1 at 2022-08-18 00:32:37 +0530
+F, [2022-08-18T00:32:37.653073 #109047] FATAL -- : [a67a999a-7f09-48c6-8c3b-b7e949623e4b]   
+[a67a999a-7f09-48c6-8c3b-b7e949623e4b] ActionController::RoutingError (No route matches [GET] "/assets/application-e5ecd47174d910dec8f72cb60d3b1c7b2a999692bee7bf6e249d9e77a2f1931d.css"):
+[a67a999a-7f09-48c6-8c3b-b7e949623e4b]   
+I, [2022-08-18T00:32:37.657375 #109047]  INFO -- : [a5cbd841-7020-4522-b32a-75ecdd228f36] Started GET "/packs/js/application-6850977f3322550eede2.js" for 127.0.0.1 at 2022-08-18 00:32:37 +0530
+F, [2022-08-18T00:32:37.657928 #109047] FATAL -- : [a5cbd841-7020-4522-b32a-75ecdd228f36]   
+[a5cbd841-7020-4522-b32a-75ecdd228f36] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6850977f3322550eede2.js"):
+[a5cbd841-7020-4522-b32a-75ecdd228f36]   
+I, [2022-08-18T00:32:37.950192 #109047]  INFO -- : [5a2cc64d-ec73-4a02-b5c7-d38aab0de77c] Started GET "/assets/home_video-2509c5d4d49f0572bdb39cd069c71634cb2a060260fce23edb2b15c2cf84ee9f.mp4" for 127.0.0.1 at 2022-08-18 00:32:37 +0530
+F, [2022-08-18T00:32:37.950838 #109047] FATAL -- : [5a2cc64d-ec73-4a02-b5c7-d38aab0de77c]   
+[5a2cc64d-ec73-4a02-b5c7-d38aab0de77c] ActionController::RoutingError (No route matches [GET] "/assets/home_video-2509c5d4d49f0572bdb39cd069c71634cb2a060260fce23edb2b15c2cf84ee9f.mp4"):
+[5a2cc64d-ec73-4a02-b5c7-d38aab0de77c]   
+I, [2022-08-18T00:32:37.951698 #109047]  INFO -- : [5470f1b3-c5eb-415d-a221-16a2b4d6025c] Started GET "/assets/home_video3-30ca68e0469693c8cb27c56db92b6cc2dae7d390d8749e0df91424c45adb31a8.mp4" for 127.0.0.1 at 2022-08-18 00:32:37 +0530
+F, [2022-08-18T00:32:37.952231 #109047] FATAL -- : [5470f1b3-c5eb-415d-a221-16a2b4d6025c]   
+[5470f1b3-c5eb-415d-a221-16a2b4d6025c] ActionController::RoutingError (No route matches [GET] "/assets/home_video3-30ca68e0469693c8cb27c56db92b6cc2dae7d390d8749e0df91424c45adb31a8.mp4"):
+[5470f1b3-c5eb-415d-a221-16a2b4d6025c]   
+I, [2022-08-18T00:32:37.981366 #109047]  INFO -- : [4f1cf60d-1f60-4f91-9046-80957a86478d] Started GET "/assets/home_video3-30ca68e0469693c8cb27c56db92b6cc2dae7d390d8749e0df91424c45adb31a8.mp4" for 127.0.0.1 at 2022-08-18 00:32:37 +0530
+F, [2022-08-18T00:32:37.981818 #109047] FATAL -- : [4f1cf60d-1f60-4f91-9046-80957a86478d]   
+[4f1cf60d-1f60-4f91-9046-80957a86478d] ActionController::RoutingError (No route matches [GET] "/assets/home_video3-30ca68e0469693c8cb27c56db92b6cc2dae7d390d8749e0df91424c45adb31a8.mp4"):
+[4f1cf60d-1f60-4f91-9046-80957a86478d]   
+I, [2022-08-18T00:32:50.542370 #109047]  INFO -- : [7d0856cb-d6a5-468b-9cb5-ac86fb644cb0] Started GET "/index" for 127.0.0.1 at 2022-08-18 00:32:50 +0530
+I, [2022-08-18T00:32:50.544569 #109047]  INFO -- : [7d0856cb-d6a5-468b-9cb5-ac86fb644cb0] Processing by HomeController#index as HTML
+I, [2022-08-18T00:32:50.549509 #109047]  INFO -- : [7d0856cb-d6a5-468b-9cb5-ac86fb644cb0]   Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 303)
+I, [2022-08-18T00:32:50.550666 #109047]  INFO -- : [7d0856cb-d6a5-468b-9cb5-ac86fb644cb0]   Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 641)
+I, [2022-08-18T00:32:50.551081 #109047]  INFO -- : [7d0856cb-d6a5-468b-9cb5-ac86fb644cb0] Completed 200 OK in 6ms (Views: 4.0ms | Allocations: 1064)
+I, [2022-08-18T00:32:50.573166 #109047]  INFO -- : [f6eac0e9-a72c-44dc-b2dd-b30adff63792] Started GET "/assets/application-e5ecd47174d910dec8f72cb60d3b1c7b2a999692bee7bf6e249d9e77a2f1931d.css" for 127.0.0.1 at 2022-08-18 00:32:50 +0530
+F, [2022-08-18T00:32:50.573594 #109047] FATAL -- : [f6eac0e9-a72c-44dc-b2dd-b30adff63792]   
+[f6eac0e9-a72c-44dc-b2dd-b30adff63792] ActionController::RoutingError (No route matches [GET] "/assets/application-e5ecd47174d910dec8f72cb60d3b1c7b2a999692bee7bf6e249d9e77a2f1931d.css"):
+[f6eac0e9-a72c-44dc-b2dd-b30adff63792]   
+I, [2022-08-18T00:32:50.574710 #109047]  INFO -- : [bbae7bd4-5f30-4ab3-ab7b-e890870376aa] Started GET "/packs/js/application-6850977f3322550eede2.js" for 127.0.0.1 at 2022-08-18 00:32:50 +0530
+F, [2022-08-18T00:32:50.575131 #109047] FATAL -- : [bbae7bd4-5f30-4ab3-ab7b-e890870376aa]   
+[bbae7bd4-5f30-4ab3-ab7b-e890870376aa] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6850977f3322550eede2.js"):
+[bbae7bd4-5f30-4ab3-ab7b-e890870376aa]   
+I, [2022-08-18T00:32:50.609213 #109047]  INFO -- : [eb7eb175-0828-421b-abca-31577180cce3] Started GET "/assets/home_video-2509c5d4d49f0572bdb39cd069c71634cb2a060260fce23edb2b15c2cf84ee9f.mp4" for 127.0.0.1 at 2022-08-18 00:32:50 +0530
+F, [2022-08-18T00:32:50.609618 #109047] FATAL -- : [eb7eb175-0828-421b-abca-31577180cce3]   
+[eb7eb175-0828-421b-abca-31577180cce3] ActionController::RoutingError (No route matches [GET] "/assets/home_video-2509c5d4d49f0572bdb39cd069c71634cb2a060260fce23edb2b15c2cf84ee9f.mp4"):
+[eb7eb175-0828-421b-abca-31577180cce3]   
+I, [2022-08-18T00:32:50.612432 #109047]  INFO -- : [8a6a711b-8db7-4f6b-92bc-cb597f235986] Started GET "/assets/home_video3-30ca68e0469693c8cb27c56db92b6cc2dae7d390d8749e0df91424c45adb31a8.mp4" for 127.0.0.1 at 2022-08-18 00:32:50 +0530
+F, [2022-08-18T00:32:50.613177 #109047] FATAL -- : [8a6a711b-8db7-4f6b-92bc-cb597f235986]   
+[8a6a711b-8db7-4f6b-92bc-cb597f235986] ActionController::RoutingError (No route matches [GET] "/assets/home_video3-30ca68e0469693c8cb27c56db92b6cc2dae7d390d8749e0df91424c45adb31a8.mp4"):
+[8a6a711b-8db7-4f6b-92bc-cb597f235986]   
+I, [2022-08-18T00:33:02.392512 #109047]  INFO -- : [74a42dcc-30a2-4138-b6d6-9c4743d69722] Started GET "/assets/home_video3-30ca68e0469693c8cb27c56db92b6cc2dae7d390d8749e0df91424c45adb31a8.mp4" for 127.0.0.1 at 2022-08-18 00:33:02 +0530
+F, [2022-08-18T00:33:02.393824 #109047] FATAL -- : [74a42dcc-30a2-4138-b6d6-9c4743d69722]   
+[74a42dcc-30a2-4138-b6d6-9c4743d69722] ActionController::RoutingError (No route matches [GET] "/assets/home_video3-30ca68e0469693c8cb27c56db92b6cc2dae7d390d8749e0df91424c45adb31a8.mp4"):
+[74a42dcc-30a2-4138-b6d6-9c4743d69722]   
+I, [2022-08-18T00:35:31.978260 #109047]  INFO -- : [22cf9ca9-4b65-4b83-a123-e65564fb4af2] Started GET "/index" for 127.0.0.1 at 2022-08-18 00:35:31 +0530
+I, [2022-08-18T00:35:31.979128 #109047]  INFO -- : [22cf9ca9-4b65-4b83-a123-e65564fb4af2] Processing by HomeController#index as HTML
+I, [2022-08-18T00:35:31.986131 #109047]  INFO -- : [22cf9ca9-4b65-4b83-a123-e65564fb4af2]   Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 303)
+I, [2022-08-18T00:35:31.987031 #109047]  INFO -- : [22cf9ca9-4b65-4b83-a123-e65564fb4af2]   Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 640)
+I, [2022-08-18T00:35:31.987410 #109047]  INFO -- : [22cf9ca9-4b65-4b83-a123-e65564fb4af2] Completed 200 OK in 8ms (Views: 2.2ms | Allocations: 1059)
+I, [2022-08-18T00:35:32.006020 #109047]  INFO -- : [6e637281-55fc-4660-a23c-8c7291b7a828] Started GET "/assets/application-e5ecd47174d910dec8f72cb60d3b1c7b2a999692bee7bf6e249d9e77a2f1931d.css" for 127.0.0.1 at 2022-08-18 00:35:32 +0530
+F, [2022-08-18T00:35:32.006406 #109047] FATAL -- : [6e637281-55fc-4660-a23c-8c7291b7a828]   
+[6e637281-55fc-4660-a23c-8c7291b7a828] ActionController::RoutingError (No route matches [GET] "/assets/application-e5ecd47174d910dec8f72cb60d3b1c7b2a999692bee7bf6e249d9e77a2f1931d.css"):
+[6e637281-55fc-4660-a23c-8c7291b7a828]   
+I, [2022-08-18T00:35:32.009374 #109047]  INFO -- : [6ca958b4-4c2d-4344-9841-bc099668bc48] Started GET "/packs/js/application-6850977f3322550eede2.js" for 127.0.0.1 at 2022-08-18 00:35:32 +0530
+F, [2022-08-18T00:35:32.009805 #109047] FATAL -- : [6ca958b4-4c2d-4344-9841-bc099668bc48]   
+[6ca958b4-4c2d-4344-9841-bc099668bc48] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6850977f3322550eede2.js"):
+[6ca958b4-4c2d-4344-9841-bc099668bc48]   
+I, [2022-08-18T00:35:32.239380 #109047]  INFO -- : [735fd3c8-0f2d-4664-8194-363874c781ad] Started GET "/assets/home_video-2509c5d4d49f0572bdb39cd069c71634cb2a060260fce23edb2b15c2cf84ee9f.mp4" for 127.0.0.1 at 2022-08-18 00:35:32 +0530
+F, [2022-08-18T00:35:32.239933 #109047] FATAL -- : [735fd3c8-0f2d-4664-8194-363874c781ad]   
+[735fd3c8-0f2d-4664-8194-363874c781ad] ActionController::RoutingError (No route matches [GET] "/assets/home_video-2509c5d4d49f0572bdb39cd069c71634cb2a060260fce23edb2b15c2cf84ee9f.mp4"):
+[735fd3c8-0f2d-4664-8194-363874c781ad]   
+I, [2022-08-18T00:35:32.243516 #109047]  INFO -- : [bf70f104-51f7-4764-80ab-13a899645c9f] Started GET "/assets/home_video3-30ca68e0469693c8cb27c56db92b6cc2dae7d390d8749e0df91424c45adb31a8.mp4" for 127.0.0.1 at 2022-08-18 00:35:32 +0530
+F, [2022-08-18T00:35:32.244118 #109047] FATAL -- : [bf70f104-51f7-4764-80ab-13a899645c9f]   
+[bf70f104-51f7-4764-80ab-13a899645c9f] ActionController::RoutingError (No route matches [GET] "/assets/home_video3-30ca68e0469693c8cb27c56db92b6cc2dae7d390d8749e0df91424c45adb31a8.mp4"):
+[bf70f104-51f7-4764-80ab-13a899645c9f]   
+I, [2022-08-18T00:35:35.843170 #109047]  INFO -- : [3b57a9a4-e133-4312-8247-6a3cf1d39123] Started GET "/" for 127.0.0.1 at 2022-08-18 00:35:35 +0530
+I, [2022-08-18T00:35:35.843753 #109047]  INFO -- : [3b57a9a4-e133-4312-8247-6a3cf1d39123] Processing by HomeController#index as HTML
+I, [2022-08-18T00:35:35.844965 #109047]  INFO -- : [3b57a9a4-e133-4312-8247-6a3cf1d39123]   Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 303)
+I, [2022-08-18T00:35:35.845704 #109047]  INFO -- : [3b57a9a4-e133-4312-8247-6a3cf1d39123]   Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 641)
+I, [2022-08-18T00:35:35.846003 #109047]  INFO -- : [3b57a9a4-e133-4312-8247-6a3cf1d39123] Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 1071)
+I, [2022-08-18T00:35:35.862223 #109047]  INFO -- : [d30914a2-bbdb-49f7-beb6-3bf905246030] Started GET "/assets/application-e5ecd47174d910dec8f72cb60d3b1c7b2a999692bee7bf6e249d9e77a2f1931d.css" for 127.0.0.1 at 2022-08-18 00:35:35 +0530
+F, [2022-08-18T00:35:35.862642 #109047] FATAL -- : [d30914a2-bbdb-49f7-beb6-3bf905246030]   
+[d30914a2-bbdb-49f7-beb6-3bf905246030] ActionController::RoutingError (No route matches [GET] "/assets/application-e5ecd47174d910dec8f72cb60d3b1c7b2a999692bee7bf6e249d9e77a2f1931d.css"):
+[d30914a2-bbdb-49f7-beb6-3bf905246030]   
+I, [2022-08-18T00:35:35.863521 #109047]  INFO -- : [d97e0fd3-89db-4b51-b49e-f7561b1312e8] Started GET "/packs/js/application-6850977f3322550eede2.js" for 127.0.0.1 at 2022-08-18 00:35:35 +0530
+F, [2022-08-18T00:35:35.863893 #109047] FATAL -- : [d97e0fd3-89db-4b51-b49e-f7561b1312e8]   
+[d97e0fd3-89db-4b51-b49e-f7561b1312e8] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6850977f3322550eede2.js"):
+[d97e0fd3-89db-4b51-b49e-f7561b1312e8]   
+I, [2022-08-18T00:35:36.847498 #109047]  INFO -- : [fffca4c9-dff6-436e-99e0-432e37a217eb] Started GET "/assets/application-e5ecd47174d910dec8f72cb60d3b1c7b2a999692bee7bf6e249d9e77a2f1931d.css" for 127.0.0.1 at 2022-08-18 00:35:36 +0530
+F, [2022-08-18T00:35:36.847936 #109047] FATAL -- : [fffca4c9-dff6-436e-99e0-432e37a217eb]   
+[fffca4c9-dff6-436e-99e0-432e37a217eb] ActionController::RoutingError (No route matches [GET] "/assets/application-e5ecd47174d910dec8f72cb60d3b1c7b2a999692bee7bf6e249d9e77a2f1931d.css"):
+[fffca4c9-dff6-436e-99e0-432e37a217eb]   
+I, [2022-08-18T00:35:36.867747 #109047]  INFO -- : [6fa68a10-4468-4460-9f15-f040f3a2a3dd] Started GET "/assets/home_video-2509c5d4d49f0572bdb39cd069c71634cb2a060260fce23edb2b15c2cf84ee9f.mp4" for 127.0.0.1 at 2022-08-18 00:35:36 +0530
+F, [2022-08-18T00:35:36.868261 #109047] FATAL -- : [6fa68a10-4468-4460-9f15-f040f3a2a3dd]   
+[6fa68a10-4468-4460-9f15-f040f3a2a3dd] ActionController::RoutingError (No route matches [GET] "/assets/home_video-2509c5d4d49f0572bdb39cd069c71634cb2a060260fce23edb2b15c2cf84ee9f.mp4"):
+[6fa68a10-4468-4460-9f15-f040f3a2a3dd]   
+I, [2022-08-18T00:35:36.868964 #109047]  INFO -- : [cd5b05d9-ca28-487d-bb90-44e0ec699f79] Started GET "/assets/home_video3-30ca68e0469693c8cb27c56db92b6cc2dae7d390d8749e0df91424c45adb31a8.mp4" for 127.0.0.1 at 2022-08-18 00:35:36 +0530
+F, [2022-08-18T00:35:36.869478 #109047] FATAL -- : [cd5b05d9-ca28-487d-bb90-44e0ec699f79]   
+[cd5b05d9-ca28-487d-bb90-44e0ec699f79] ActionController::RoutingError (No route matches [GET] "/assets/home_video3-30ca68e0469693c8cb27c56db92b6cc2dae7d390d8749e0df91424c45adb31a8.mp4"):
+[cd5b05d9-ca28-487d-bb90-44e0ec699f79]   
