@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 2022_08_22_043058) do
     t.integer "Deposit"
     t.integer "Closing_time"
     t.string "Food"
+    t.boolean "shortlist"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "Pglocation"
@@ -100,10 +101,14 @@ ActiveRecord::Schema.define(version: 2022_08_22_043058) do
 
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "fname"
+    t.string "sname"
     t.string "email"
+    t.integer "pnumber"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "role", default: "user"
+    t.string "role", default: "admin"
+    t.string "password"
+    t.string "confirm_password"
     t.string "password_digest"
   end
 
