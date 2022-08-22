@@ -1,0 +1,1 @@
+# rails_happy_home
